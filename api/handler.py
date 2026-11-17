@@ -8,6 +8,8 @@ model = joblib.load('../models/model_cycle1.joblib')
 
 # initialize API
 app = Flask(__name__)
+app = Flask(__name__)
+
 
 @app.route('/fraud/predict', methods=['POST'])
 def churn_predict():
